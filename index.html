@@ -1,15 +1,88 @@
 <head>
-    <style>
-        main{
-            background-color: white;
+    <style>  
+        .logo{
+            padding: 5% 40% 5% 40%;
+            
+        }
+        .searchStuff{
+            padding: 0% 20% 0% 30%;
+            min-width: 350px;
+        }
+        .searchBar{
+            height:39px;
+            width:90%;
+            max-width: 600px;
+            border-radius:25px;
+            padding:15px 25px;
+            border: 1px solid #222;
+        }
+        .topBox{
+            display: flex;
+            flex-direction: row;
+        }
+        .buttons{
+            padding: 2% 25% 0% 0%;
+            display:flex;
+            flex-direction: row;
+            
+            justify-content: space-evenly;
+            
+        }
+        .searchButton{
+            padding: 10px;
+            background-color: #f8f9fa;
+            border:1px solid #f8f9fa;
+        }
+        .luckyButton{
+            background-color: #f8f9fa;
+            border:1px solid #f8f9fa;
+        }
+        ul{
+            list-style-type: none;
+        }
+        li{
+            float:left;
+        }
+        li a{
+            display: block;
+            text-align: center;
+            padding: 15px 10px;
+        }
+        .Images{
+            float: inline-end;
+        }
+        footer{
+            padding-top: 15%;
         }
     </style>
 </head>
+<header class="fiveHead">
+
+    <ul class="topBox">
+        <li class="About"><a>About</a> </li>
+        <li class="Store"><a>Store</a></li> 
+        <li class="Gmail"><a>Gmail</a> </li>
+        <li class="Images"><a>Images</a></li>
+    </ul>
+
+</header>
 <main>
-    <div>
-        <img href="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png">
-        <input type="text">
-        <input type="button">
-        
-    </div>
+        <a href="#"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" class="logo"></a>
+        <form class="searchStuff">
+        <input type="text" class="searchBar">
+        <div class="buttons">
+            <button type="submit" class="searchButton">Google Search</button>
+            <button type="submit" class="luckyButton">I'm Feeling Lucky</button>
+        </form>
+        </div>
 </main>
+<footer>
+    <ul>
+        <li><a>Advertising</a></li>
+        <li><a>Business</a></li>
+        <li><a>How Search works</a></li>
+        <li><a>Privacy</a></li>
+        <li><a>Terms</a></li>
+        <li><a>Settings</a></li>
+    </ul>
+</footer>
