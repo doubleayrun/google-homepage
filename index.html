@@ -10,11 +10,14 @@
         }
         .searchBar{
             height:39px;
-            width:90%;
+            width:80%;
             max-width: 600px;
             border-radius:25px;
             padding:15px 25px;
-            border: 1px solid #222;
+            border: 1px solid #888;
+        }
+        .searchBar:hover{
+            border: 3px solid #aaa;
         }
         .topBox{
             display: flex;
@@ -59,19 +62,37 @@
         footer{
             padding-top: 15%;
         }
+        .fiveHead{
+            display:flex;
+            justify-content: space-between;
+            margin-right: 20px;
+        }
+        .fiveFoot{
+            display:flex;
+            justify-content: space-between;
+            margin-right: 20px;
+        }
+        .mainTrain{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
     </style>
 </head>
+<main class="mainTrain">
 <header class="fiveHead">
     <!-- this is the method w3schools recommended to make a header, but then I've been having trouble getting it to space out the links in the header -->
     <ul class="topBox">
         <li class="About"><a>About</a> </li>
         <li class="Store"><a>Store</a></li> 
+    </ul>
+    <ul>
         <li class="Gmail"><a>Gmail</a> </li>
         <li class="Images"><a>Images</a></li>
     </ul>
 
 </header>
-<main>
+<body>
         <a href="#"><img src="https://www.google.com/images/branding/googlelogo/1x/googlelogo_color_272x92dp.png" alt="Google Logo" class="logo"></a>
         <form class="searchStuff">
         <input type="text" class="searchBar">
@@ -80,14 +101,17 @@
             <button type="submit" class="luckyButton">I'm Feeling Lucky</button>
         </form>
         </div>
-</main>
-<footer>
+</body>
+<footer class="fiveFoot">
     <ul>
         <li><a>Advertising</a></li>
         <li><a>Business</a></li>
         <li><a>How Search works</a></li>
+    </ul>
+    <ul>    
         <li><a>Privacy</a></li>
         <li><a>Terms</a></li>
         <li><a>Settings</a></li>
     </ul>
 </footer>
+</main>
